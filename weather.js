@@ -69,6 +69,7 @@ newSubmit.addEventListener("click", () => {
     if (state > 0) {
         newInput.placeholder = `INPUT NOT FOUND !`
     }
+    
 })
 
 const months = [
