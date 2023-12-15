@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 100vh;
+    /* width: fit-content; */
+}
+
+div#main-box, div#intro-box {
+    background-color: #ffffff6c;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2rem 4rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 4.5vh;
+    font-weight: bold;
+    user-select: none;
+    border-radius: 25px;
+}
+
+div#main-box:hover {
+    text-shadow: 3px 3px 50px #e978ab;
+}
+
+input {
+    text-align: center;
+    display: flex;
+    margin-top: 1.1rem;
+    justify-content: center;
+}
+
+input.active {
+    box-shadow: 0px 0.5px 8px #f13171;
+}
+
+div#main-box div#submit {
+    font-size: small;
+    margin-top: 0.8rem;
+    font-variant: small-caps;
+    background-color: #e9569859;
+    padding: 0.3rem;
+    border-radius: 6px;
+}
+
+div#intro-box div {
+    background-color: #e9569859;
+    padding: -3rem 1rem 0rem 1rem;
+    font-size: 2vh;
+    border-radius: 4vh;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+div#intro-box div:hover, div#main-box div#submit:hover {
+    cursor: pointer;
+    background-color: #e978ab;
+    box-shadow: 0px 0px 22px #e978ab;
+}
+
+div#intro-box div:active, div#main-box div#submit:active {
+    transform: scale(0.7);
+    transition-duration: 0.5s;
+}
+
+div#intro-box div:not(:active), div#main-box div#submit:not(:active){
+    transition-duration: 0.5s;
+    transform: scale(1);
+}
+
+div#intro-box span {
+     animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 10px #f068a5;
+    }
+    30% {
+        text-shadow: 0px 0px 10px white;
+    }
+    75% {
+        text-shadow: 0px 0px 10px #f068a5;
+    }
+    100% {
+        text-shadow: 0px 0px 20px white;
+    }
+}
+
+div#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#input-new {
+    height: 1.5rem;
+    width: 14rem;
+}
+
+#submit-new img {
+    height: 1.8rem;
+    position: relative;
+    top: 0.89rem;
+    padding: 0.1rem;
+    margin-left: 1.6rem;
+    box-shadow: 2px 2px 3px rgb(246, 143, 160);
+}
+
+#submit-new img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    box-shadow: -2px -2px 3px rgb(246, 143, 160);
+}
+
+#submit-new img:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+#submit-new img:active {
+    box-shadow: 2px 2px 15px rgb(255, 9, 50);
+}
+
+div#search {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+div#weather div#data {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff90;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 47vw;
+    border-radius: 20px;
+}
+
+small {
+    color: gray;
+    font-size: 0.9rem;
+    font-variant: small-caps;
+}
+
+div#city-country {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 0rem;
+}
+
+div#icon img{
+    height: 5rem;
+}
+
+div#date {
+    font-size: 1.9rem;
+    margin-bottom: -0.3rem;
+}
+
+div#temp {
+    font-family: sans-serif;
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+
+div#humid {
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: -0.3rem;
+    margin-top: 0.5rem;
+}
+
+div#description {
+    font-size: 2.2rem;
+    margin-bottom: -0.4rem;
+    margin-top: 0.5rem;
+    font-variant: small-caps;
+}
+
+input {
+    height: 2rem;
+}
