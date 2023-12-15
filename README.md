@@ -17,6 +17,7 @@ Create an account in (https://openweathermap.org/). Once you create an account, 
 
 Use Fetch to **fetch** the data from openweathermap api and display it as shown in the output.
 
+
 ![Image description](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/weather-forecast-lab.png)
 
 Happy Coding❤️
