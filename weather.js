@@ -87,8 +87,8 @@ function calculateDate() {
 }
 
 // Progression 1: Create a function and fetch data using "fetch" from openweathermap api and display the data as given in reference image.
-function fetchCity(cityname) {
-    fetch("https://api.openweathermap.org/geo/1.0/direct?q=",cityname,"&limit=1&appid=",APIKEY)
+function fetchCity(city) {
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKEY}`)
     .then((response) => {
         return response.json();
     })
